@@ -1,0 +1,30 @@
+Ejercicio 3
+Solución:
+1 inicio
+	definir
+		arrayPromedios (limiPro) real [10, 10, 9.1, 7, 6.1, 4, 8]
+		arrayEstudiantes (limiPro) cadena ["Kimberly Gonzalez", "Mark Hogan", "Teresa Martinez", "Julia Johnson", "Mark Cook", "Jennifer Manning","Juan Vasquez"] 
+		promediosCualitativos[], nombre, promedioCualitativo: cadena
+		i, limiPro=7: entero
+		promedio: real
+2 para i=0; i<limiPro; i=i+1 hacer
+3	si (promedio >= 0 o promedio <= 5.9)
+4		promediosCualitativos[i]="regular"
+5	si no
+6		si  (promedio >= 6 o promedio <= 8.9)
+7			 promediosCualitativos[i] = "Bueno"
+8		si no
+9			si (promedio >= 9 o promedio <= 10)
+10				 promediosCualitativos[i] = "Sobresaliente"
+11			fin si
+12	fin si
+13 fin para
+14 para i=0; i<limiPro; i=i+1 hacer
+15	nombre=arrayEstudiantes[i]
+16	promedio=arrayPromedios[i]
+17	promedioCualitativa= promediosCualitativos[i]
+18	escribir "nombre "+nombre		
+19	escribir "promedio: "+promedio
+20	escribir "promedioCualitativo: "+promedioCualitativo
+21 fin para
+22 fin
